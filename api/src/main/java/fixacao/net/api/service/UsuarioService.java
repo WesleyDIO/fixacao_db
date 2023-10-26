@@ -18,11 +18,9 @@ public class UsuarioService {
         return usuarioRepository.findAll();
     }
 
-
     public void deletar( Long id){
         usuarioRepository.deleteById(id);
     }
-
 
     public void salvar( Usuario usuario){
         usuarioRepository.save(usuario);
@@ -31,6 +29,5 @@ public class UsuarioService {
     public Usuario buscarUm(Long id) {
         return usuarioRepository.findById(id).get();
     }
-
 
 }
